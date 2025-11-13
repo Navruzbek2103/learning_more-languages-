@@ -76,7 +76,6 @@ elModal.addEventListener("click", (e) => {
                 window.scrollTo({
                     top: 0,
                 })        
-                // let filteredCategory = allData.filter(data => data.category === "fe'llar")
                 localStorage.setItem("filteredCategoryName", JSON.stringify(allData))
             }
         }
@@ -91,8 +90,7 @@ elCategory.addEventListener("click", (e) => {
         localStorage.removeItem("durationGame")
         elDuration.classList.remove("modalLang-durationList-active")
         elDuration.previousElementSibling.classList.remove("modalLang-box-thanksMessage-active")
-        // console.log(e.target.parentNode.parentNode.previousElementSibling.previousElementSibling.textContent);
-        // console.log(e.target);
+
         const categoryLevel = {
             category: e.target.parentNode.parentNode.previousElementSibling.previousElementSibling.textContent,
             level: e.target.textContent
