@@ -1,0 +1,539 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a, h1, h2, h3, h4, h5, h6, p, ol, ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: "Amiri", serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* butun ekran balandligi */
+    margin: 0;
+}
+
+main {
+    flex: 1; /* asosiy kontent bo‘limi joyni to‘ldiradi */
+    padding: 20px;
+    /* background: #f2f2f2; */
+}
+
+header{
+    width: 80vw;
+    background-color: #94EB1F;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    max-width: 300px;
+    width: 100%;    
+    list-style-type: none;
+}
+
+.nav-item-link{
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.hero{
+    width: 80vw;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.hero-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    /* border: 1px solid red; */
+    list-style-type: none;
+    margin-top: 10%;
+
+}
+
+.hero-item{
+    width: calc((100%) / 4 - 30px);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 10px lightgrey;
+    /* border: 1px solid red; */
+    background-color: #E3F2CE;
+    flex-direction: column;     
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 25px;
+    text-decoration: none;
+}
+
+.hero-item:hover{
+    box-shadow: 0 10px 10px grey;
+    transition: all .3s ease;
+}
+
+
+
+.hero-item-card-title{
+    /* border: 1px solid red;    */
+    text-align: center;
+    color: black;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.hero-btnLevelList{
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 13px;
+    border-radius: 10px;
+    background-color: #94EB1F;
+}
+
+.hero-item-text{
+    /* border: 1px solid red; */
+    font-weight: 600;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.hero-btnLevelItem-link{
+    display: block;
+    /* border: 1px solid red; */
+    background-color: black;
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.hero-item-card-icon{
+    width: 45%;
+    margin-bottom: 15px;
+    /* border: 1px solid red; */
+}
+
+
+.hero-btnLevelItem-link:hover{
+    transform: scale(1.08);
+    transition: all .3s ease;
+    /* border: 1px solid red; */
+}
+
+.hero-btnLevelItem-link:active{
+    transform: scale(1);
+    transition: all .1s ease;
+}
+
+/* MODAL (Choice Language) */
+
+.modalLang{
+    display: none;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 1;
+}
+
+.modalLang-active{
+    display: block;
+}
+
+.modalLang-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    /* border: 1px solid red; */
+    max-width: 40vw;
+    margin: 8% auto;
+    background-color: white;
+    padding: 60px 70px;
+    border-radius: 25px;
+}
+
+.modalLang-box-closeIcon{
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.modalLang-box-closeIcon:hover{
+    transition: all .3s ease;
+    box-shadow: 0 0 7px 3px black;
+    transform: scale(1.1);
+}
+
+.modalLang-box-closeIcon:active{
+    transform: scale(1);
+    box-shadow: 0 0 10px 4px #94EB1F;
+}
+
+
+.modalLang-box-title{
+    text-align: center;
+    font-size: 22px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.modalLang-box-text{
+    /* border: 1px solid red; */
+    font-size: 16px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.modalLang-box-thanksMessage{
+    display: none;
+    /* border: 1px solid red; */
+    font-size: 24px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-style: italic;
+    padding: 5px 15px;
+
+    background: radial-gradient(circle, #94EB1F);
+}
+
+.modalLang-box-thanksMessage-active{
+    display: block;
+}
+
+.modalLang-durationList{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.modalLang-durationList-active{
+    display: none;
+}
+
+.modalLang-durationItem{
+    /* border: 1px solid red; */
+    width: calc((100% / 3) - 5px);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.modalLang-durationItem:nth-child(1){
+    /* border: 1px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-bottom: 10px;
+    background-color: #E3F2CE;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 2px solid black;
+}
+
+.modalLang-durationItem-text-span{
+    /* border: 1px solid red; */
+    font-size: 12px;
+    color: red;
+
+}
+
+.modalLang-durationItem-btn{
+    cursor: pointer;
+    transition: all .2s ease;
+    font-weight: bold;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+.modalLang-durationItem-btn:active{
+    transform: scale(.95);
+    transition: all .2s ease;
+}
+
+.modalLang-box-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 25px;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 15px 20px;
+    border-radius: 15px;
+    background-color: #94EB1F;
+}
+
+.modalLang-box-item-btn{
+    border-radius: 30px;
+    padding: 10px 25px;
+    background-color: black;
+    color: white;
+    /* border: 1px solid red; */
+    border: none;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.modalLang-box-item-btn:hover{
+    box-shadow: 0 0 8px 3px gray;
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+
+.modalLang-box-item-btn:active{
+    transform: scale(1);
+}
+
+
+
+
+
+
+/* FOOTER */
+.footer{
+    background-color: #94EB1F;
+    width: 80vw;
+    margin: 0 auto ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+}
+
+.footer-time{
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.footer-list{
+    margin-right: 30px;
+    display: flex;
+    list-style-type: none;
+    max-width: 150px;
+    width: 100%;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+}
+
+.footer-item-link{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: italic;
+}
+
+
+/* FOR DICTIONARY PAGE */
+.hero-box{
+    /* border: 1px solid red; */
+    max-width: 750px;
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px lightgray;
+} 
+
+.hero-heading{
+    width: 30%;
+    padding: 5px 0;
+    margin: 5px auto;
+    /* border: 1px solid red; */
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    background-color: aqua;
+    font-family: "Monotype Corsiva";
+}
+
+.hero-timeContent{
+    position: relative;
+    /* max-width: 160px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+    /* border: 1px solid red; */
+}
+
+
+.hero-coinText, .hero-errorText{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    /* left: 0; */
+    font-size: 28px;
+    background-color: #94EB1F;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+.hero-coinText{
+    left: 0;
+}
+
+.hero-coinText-span{
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.hero-errorText{
+    position: absolute;
+    right: 0;
+    color: yellow;
+    background-color: red;
+}
+
+.hero-timer-semicolon{
+    position: absolute;
+    left: 32%;
+    bottom: 5px;
+    margin: 0;
+    /* border: 1px solid red; */
+}
+
+.hero-timer-time{
+    position: absolute;
+    right: 15px;
+    /* border: 1px solid red; */
+}
+
+.hero-timer{
+    position: relative;
+    max-width: 150px;
+    width: 100%;
+    /* border: 1px solid red; */
+    font-size: 65px;
+    display: flex;
+    box-shadow: 0 0 10px lightgray;
+    border-radius: 10px;
+    padding: 0 15px;
+    /* padding-left: 10px; */
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.hero-timer-addTime{
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 90%;
+    top: 12px;
+    font-size: 30px;
+    /* border: 1px solid red; */
+    padding: 8px;
+    color: red;
+    background-color: #94EB1F;
+    border-radius: 5px;
+}
+
+.hero-timer-addTime:hover{
+    box-shadow: 0 0 10px gray;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.hero-timer-addTime:active{
+    transform: scale(.9);
+    transition: all .2s ease;
+}
+
+.hero-word{
+    text-align: center;
+    font-size: 90px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.hero-trueAnswer{
+    display: none;
+    /* border: 1px solid red; */
+    font-size: 100px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: red;
+}
+
+.hero-trueAnswer-active{
+    display: block;
+}
+
+.hero-word-found{
+    /* border: 1px solid red; */
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.hero-word-found:hover{
+    box-shadow: 0 0 10px gray;
+    transition: all .1s ease;
+}
+
+.hero-word-found:active{
+    transform: scale(0.9);
+    transition: all .2s ease;
+}
