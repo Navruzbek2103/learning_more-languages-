@@ -23,7 +23,11 @@ const reloadIconBtn = document.querySelector(".resultModal-box-content-icon")
 const getHighScore = document.querySelector(".resultModal-box-item-left-highScore")
 const getHighScoreComment = document.querySelector(".resultModal-box-item-commentHighScore")
 const elBody2 = document.querySelector("body")
-console.log(getHighScoreComment);
+const audioControl = document.querySelector(".hero-backgroundMusicGame")
+const getEmoji = document.querySelector(".resultModal-emojiReactions")
+
+
+console.log(audioControl);
 
 
 
@@ -40,33 +44,35 @@ window.addEventListener("load", () => {
 
 
 if(localStorage.getItem("durationGame") === "1 min"){
-    gameTime = 60;
+    gameTime = 14;
 }
 else if(localStorage.getItem("durationGame") === "3 min"){
-    gameTime = 180;
+    gameTime = 14;
 }
 else if(localStorage.getItem("durationGame") === "5 min"){
-    gameTime = 300;
+    gameTime = 14;
 }
 else if(localStorage.getItem("durationGame") === "10 min"){
-    gameTime = 600;
+    gameTime = 14;
 }
 else if(localStorage.getItem("durationGame") === "30 min"){
-    gameTime = 1800;
+    gameTime = 14;
 }
 else if(localStorage.getItem("durationGame") === "1 soat"){
-    gameTime = 3600;
+    gameTime = 14;
 }
 
 
 document.addEventListener("DOMContentLoaded", () => {
     foundWord.addEventListener("click", (r) => {
     // console.log(JSON.parse(localStorage.getItem("wordOnWindow")).arabic)
-    coin += 1
-    elCoin.textContent = coin
-    foundWord.style.display = "none"
-    trueAnswer.style.display = "block"
-    trueAnswer.textContent = JSON.parse(localStorage.getItem("wordOnWindow")).arabic
+    if(elWord.textContent !== "Tayyorlaning..."){
+        coin += 1
+        elCoin.textContent = coin
+        foundWord.style.display = "none"
+        trueAnswer.style.display = "block"
+        trueAnswer.textContent = JSON.parse(localStorage.getItem("wordOnWindow")).arabic
+    }
 })
 })
 
@@ -160,6 +166,8 @@ function changeWordFunc(){
             if(gameTime == 0 || gameTime < 0){
 
                 clearInterval(changingTypeGame)
+                audioControl.pause()
+
                 foundWord.style.display = "none"
                 getResultModal.classList.add("resultModal-active")
                 elBody2.style.overflow = "hidden"
@@ -177,26 +185,44 @@ function changeWordFunc(){
                 if(coin === 0){
                     getHighScore.textContent = "0:"
                     getHighScoreComment.textContent = "Afsuski, ball to'play olmadingiz"
-
+                    audioControl.src = "./music/fail-celebrate.mp3"
+                    audioControl.play();
                 }
                 else{
                     if(localStorage.getItem("highScore") === null){
                         localStorage.setItem("highScore", coin)
                         // console.log(localStorage.getItem("highScore"));
+                        getHighScore.textContent = (coin + " / " + localStorage.getItem("highScore") + ":")
                         
                     }
                     else if (localStorage.getItem("highScore") !== null){
                         if(coin > localStorage.getItem("highScore")){
                             localStorage.setItem("highScore", coin)
                             getHighScore.textContent = (coin + " / " + localStorage.getItem("highScore") + ":")
-                            
+                            audioControl.src = "./music/winner-celebrate.mp3"
+                            audioControl.play();
                             getHighScoreComment.textContent = "Rekordingizni yangiladingiz, ofarin!"
+                            getEmoji.classList.add("resultModal-emojiReactions-active")    
+                            setTimeout (() => {
+                                getEmoji.classList.remove("resultModal-emojiReactions-active")
+                            }, 4000)
+                        }
+                        else if (coin == localStorage.getItem("highScore")){
+                            getHighScoreComment.textContent = ("To'plagan balingiz avvalgi rekord ball bilan teng bo'lib qoldi")
+                            getHighScore.textContent = (coin + " / " + localStorage.getItem("highScore") + ":")
+                            audioControl.src = "./music/fail-celebrate.mp3"
+                            audioControl.play();                            
                         }
                         else{
-                            
                             getHighScore.textContent = (coin + " / " + localStorage.getItem("highScore") + ":")
+                            audioControl.src = "./music/fail-celebrate.mp3"
+                            audioControl.play();
                             getHighScoreComment.textContent = ("Rekord yangilanishiga " + (localStorage.getItem("highScore") - coin) + " ball yetmadi")
-
+                            getEmoji.src = "./images/sad.png"
+                            getEmoji.classList.add("resultModal-emojiReactions-active")    
+                            setTimeout (() => {
+                                getEmoji.classList.remove("resultModal-emojiReactions-active")
+                            }, 4000) 
                         }
                     }
 

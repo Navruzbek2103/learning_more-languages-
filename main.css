@@ -570,6 +570,57 @@ header{
     /* border: 1px solid red; */
 }
 
+.resultModal-emojiReactions{
+    display: none;
+    position: absolute;
+    /* border: 1px solid red; */
+    /* transform: translateY(50%); */
+    top: calc((100% / 2) - 128px);
+    left: calc((100% / 2) - 128px);
+    width: 280px;
+    height: 256px;
+    animation: rotateEmoji 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+}
+
+@keyframes rotateEmoji {
+    0% {
+        transform: rotate(0deg);
+        /* transition: all .3s ease;     */
+    }
+    
+    20% {
+        transform: rotate(20deg);
+        /* transition: all .3s ease;     */
+    }
+    40% {
+        transform: rotate(40deg);
+        /* transition: all .3s ease;     */
+    }
+    50% {
+        transform: rotate(50deg);
+        /* transition: all .3s ease;     */
+    }
+    60% {
+        transform: rotate(40deg);
+        /* transition: all .3s ease;     */
+    }
+    
+    80% {
+        transform: rotate(20deg);
+        /* transition: all .3s ease;     */
+    }
+    100% {
+        transform: rotate(0deg);
+        /* transition: all .3s ease;     */
+    }
+}
+
+.resultModal-emojiReactions-active{
+    display: block;
+}
+
 .resultModal-box-title{
     /* border: 1px solid red; */
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
