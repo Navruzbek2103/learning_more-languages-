@@ -187,6 +187,7 @@ function changeWordFunc(){
                     getHighScoreComment.textContent = "Afsuski, ball to'play olmadingiz"
                     audioControl.src = "./music/fail-celebrate.mp3"
                     audioControl.play();
+                    // audioControl.loop = true;
                 }
                 else{
                     if(localStorage.getItem("highScore") === null){
