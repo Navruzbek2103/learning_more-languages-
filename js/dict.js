@@ -44,22 +44,22 @@ window.addEventListener("load", () => {
 
 
 if(localStorage.getItem("durationGame") === "1 min"){
-    gameTime = 14;
+    gameTime = 60;
 }
 else if(localStorage.getItem("durationGame") === "3 min"){
-    gameTime = 14;
+    gameTime = 180;
 }
 else if(localStorage.getItem("durationGame") === "5 min"){
-    gameTime = 14;
+    gameTime = 300;
 }
 else if(localStorage.getItem("durationGame") === "10 min"){
-    gameTime = 14;
+    gameTime = 600;
 }
 else if(localStorage.getItem("durationGame") === "30 min"){
-    gameTime = 14;
+    gameTime = 1800;
 }
 else if(localStorage.getItem("durationGame") === "1 soat"){
-    gameTime = 14;
+    gameTime = 3600;
 }
 
 
