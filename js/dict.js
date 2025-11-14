@@ -1,4 +1,5 @@
 const elWord = document.querySelector(".hero-word")
+
 // console.log(elWord);
 const getData = JSON.parse(localStorage.getItem("filteredCategoryName"));
 const getTypeTest = localStorage.getItem("typeTest")
@@ -9,6 +10,21 @@ const elCoin = document.querySelector(".hero-coinText-span")
 const foundWord = document.querySelector(".hero-word-found")
 const elError = document.querySelector(".hero-errorText-span")
 const trueAnswer = document.querySelector(".hero-trueAnswer")
+const getTimeDuration = document.querySelector(".resultModal-box-item-left-text")
+const getAllWords = document.querySelector(".resultModal-box-item-left-text-spanAllWords")
+const getTrueAnswer = document.querySelector(".resultModal-box-item-left-text-spanTrueAnswer")
+const getFalseAnswer = document.querySelector(".resultModal-box-item-left-text-spanFalseAnswer")
+const getGameDegree = document.querySelector(".resultModal-box-item-left-textLevel")
+const getGameType = document.querySelector(".resultModal-box-item-left-textGameType")
+const elBtnPrint = document.querySelector(".btnPrint")
+const getResultModal = document.querySelector(".resultModal")
+const watchResultBtn = document.querySelector(".hero-watchResult")
+const reloadIconBtn = document.querySelector(".resultModal-box-content-icon")
+const getHighScore = document.querySelector(".resultModal-box-item-left-highScore")
+const getHighScoreComment = document.querySelector(".resultModal-box-item-commentHighScore")
+const elBody2 = document.querySelector("body")
+console.log(getHighScoreComment);
+
 
 
 let allWords = 0;
@@ -18,33 +34,34 @@ let gameTime = 0;
 
 window.addEventListener("load", () => {
     localStorage.removeItem("wordOnWindow")
+
 })
 
 
 
 if(localStorage.getItem("durationGame") === "1 min"){
-    gameTime = 16;
+    gameTime = 7;
 }
 else if(localStorage.getItem("durationGame") === "3 min"){
-    gameTime = 180;
+    gameTime = 7;
 }
 else if(localStorage.getItem("durationGame") === "5 min"){
-    gameTime = 300;
+    gameTime = 7;
 }
 else if(localStorage.getItem("durationGame") === "10 min"){
-    gameTime = 600;
+    gameTime = 7;
 }
 else if(localStorage.getItem("durationGame") === "30 min"){
-    gameTime = 1800;
+    gameTime = 7;
 }
 else if(localStorage.getItem("durationGame") === "1 soat"){
-    gameTime = 3600;
+    gameTime = 7;
 }
 
 
 document.addEventListener("DOMContentLoaded", () => {
     foundWord.addEventListener("click", (r) => {
-    console.log(JSON.parse(localStorage.getItem("wordOnWindow")).arabic)
+    // console.log(JSON.parse(localStorage.getItem("wordOnWindow")).arabic)
     coin += 1
     elCoin.textContent = coin
     foundWord.style.display = "none"
@@ -141,20 +158,74 @@ function changeWordFunc(){
             localStorage.setItem("wordOnWindow", JSON.stringify(randomWord))
             
             if(gameTime == 0 || gameTime < 0){
+
                 clearInterval(changingTypeGame)
                 foundWord.style.display = "none"
-                alert("O'yin tugadi|  Endi shu joyiga modalka yasashlik kerak, unda yakuniy natijalar e'lon qilinishi zarur. Masalan, o'yin davomiyligi qancha bo'ldi? Jami savollar soni, to'g'ri va noto'g'ri javoblar miqdori ko'rsatilishi zarur | Keyin to'g'ri javobni ko'rsatish variyantini ham ko'rib chiqishlik kerak")
+                getResultModal.classList.add("resultModal-active")
+                elBody2.style.overflow = "hidden"
+                getTimeDuration.textContent = (localStorage.getItem("durationGame") +":")
+                getAllWords.textContent = allWords > 0 ? allWords-1 : 0;
+                getTrueAnswer.textContent = coin;
+                getFalseAnswer.textContent = error;
+                getGameDegree.textContent = (JSON.parse(localStorage.getItem("choiceData")).level + ":");
+                getGameType.textContent = (JSON.parse(localStorage.getItem("choiceData")).category + ":");
+                //  
+                elBtnPrint.addEventListener("click", () => {
+                    window.print();
+                });
+                
+                if(coin === 0){
+                    getHighScore.textContent = "0:"
+                    getHighScoreComment.textContent = "Afsuski, ball to'play olmadingiz"
 
+                }
+                else{
+                    if(localStorage.getItem("highScore") === null){
+                        localStorage.setItem("highScore", coin)
+                        // console.log(localStorage.getItem("highScore"));
+                        
+                    }
+                    else if (localStorage.getItem("highScore") !== null){
+                        if(coin > localStorage.getItem("highScore")){
+                            localStorage.setItem("highScore", coin)
+                            getHighScore.textContent = (coin + " / " + localStorage.getItem("highScore") + ":")
+                            
+                            getHighScoreComment.textContent = "Rekordingizni yangiladingiz, ofarin!"
+                        }
+                        else{
+                            
+                            getHighScore.textContent = (coin + " / " + localStorage.getItem("highScore") + ":")
+                            getHighScoreComment.textContent = ("Rekord yangilanishiga " + (localStorage.getItem("highScore") - coin) + " ball yetmadi")
+
+                        }
+                    }
+
+                }
+
+
+                getResultModal.addEventListener("click", (e) => {
+                    if(e.target.className === "resultModal-box-closeIcon" || e.target.className === "resultModal" || e.target.className === "container"){
+                        getResultModal.classList.remove("resultModal-active")
+                        watchResultBtn.classList.add("hero-watchResult-active")
+                    }
+                    else if (e.target.className === "resultModal-box-content-icon"){
+                        location.reload()
+                    }
+                    
+                })
+                watchResultBtn.addEventListener("click", () => {
+                    getResultModal.classList.add("resultModal-active")
+                })
+                
             }
 
-            // console.log(gameTime);
 
             if(getTypeTest === "O'zbekcha"){
                 if(randomWord.uz !== ""){
                     elWord.textContent = randomWord.uz
                     allWords = allWords + 1;
                     elWord.style.color = "black"
-                    console.log(allWords);
+                    // console.log(allWords);
                     // trueAnswer.textContent = randomWord.
                     trueAnswer.textContent = randomWord.arabic
                         

@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Download section as PDF — print</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    header, footer { background:#f3f3f3; padding:10px; margin-bottom:10px; }
+    section.invoice { border:1px solid #ddd; padding:20px; }
+    /* Print-styles agar foydalanuvchi print qilsa */
+    @media print {
+      body * { visibility: hidden; }               /* hamma narsani ko‘rinmas qilyapmiz */
+      #printable, #printable * { visibility: visible; } /* faqat printable ko‘rinadi */
+      #printable { position: absolute; left: 0; top: 0; width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>Veb sahifa sarlavhasi</header>
+
+  <section class="invoice" id="printable">
+    <h2>Hisob varaqasi</h2>
+    <p>Mijoz: Ali</p>
+    <table>
+      <tr><td>1. Mahsulot A</td><td>1000</td></tr>
+      <tr><td>2. Mahsulot B</td><td>500</td></tr>
+      <tr><td><strong>Jami</strong></td><td><strong>1500</strong></td></tr>
+    </table>
+  </section>
+
+  <footer>Footer ma'lumot</footer>
+
+  <button id="btnPrint">PDF sifatida yuklab olish (print)</button>
+
+  <script>
+    document.getElementById('btnPrint').addEventListener('click', function(){
+      window.print();
+    });
+  </script>
+</body>
+</html>

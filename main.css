@@ -19,21 +19,33 @@ body{
     flex-direction: column;
     min-height: 100vh; /* butun ekran balandligi */
     margin: 0;
+    padding: 0;
 }
 
 main {
     flex: 1; /* asosiy kontent bo‘limi joyni to‘ldiradi */
-    padding: 20px;
+    /* padding: 20px; */
     /* background: #f2f2f2; */
 }
 
+.container{
+    max-width: 1330px;
+    width: 100%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    padding: 0 20px;
+}
+
 header{
-    width: 80vw;
+    /* width: auto; */
+    width: 80%;
     background-color: #94EB1F;
     margin: 0 auto;
 }
 
 .nav{
+    width: 100%;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -342,43 +354,6 @@ header{
 
 
 
-/* FOOTER */
-.footer{
-    background-color: #94EB1F;
-    width: 80vw;
-    margin: 0 auto ;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 25px;
-}
-
-.footer-time{
-    color: white;
-    font-weight: bold;
-    padding: 10px 15px;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 18px;
-    font-style: italic;
-}
-
-.footer-list{
-    margin-right: 30px;
-    display: flex;
-    list-style-type: none;
-    max-width: 150px;
-    width: 100%;
-    /* border: 1px solid red; */
-    justify-content: space-between;
-}
-
-.footer-item-link{
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    font-style: italic;
-}
-
 
 /* FOR DICTIONARY PAGE */
 .hero-box{
@@ -537,3 +512,255 @@ header{
     transform: scale(0.9);
     transition: all .2s ease;
 }
+
+.hero-watchResult{
+    display: none;
+    /* border: 1px solid red; */
+    padding: 5px 10px;
+    font-size: 24px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    border: 2px solid black;
+    background-color: #E3F2CE;
+    transition: all .3s ease;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-watchResult:hover{
+    transition: all .3s ease;
+    box-shadow: 0 0 10px 2px black;
+}
+
+.hero-watchResult:active{
+    transform: scale(.9);
+}
+
+.hero-watchResult-active{
+    display: block;
+}
+
+/* GAME RESULT MODAL STYLES START */
+
+.resultModal{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    /* border: 1px solid red; */
+}
+
+.resultModal-active{
+    display: block;
+}
+
+.resultModal-box{
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    margin: 5.5% auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* border: 1px solid red; */
+}
+
+.resultModal-box-title{
+    /* border: 1px solid red; */
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.resultModal-box-closeIcon{
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.resultModal-box-closeIcon:hover{
+    box-shadow: 0 0 10px 3px black;
+    transition: all .3s ease;
+}
+
+.resultModal-box-closeIcon:active{
+    transform: scale(.9);
+}
+
+.resultModal-box-list{
+    border-top: 5px dashed red;
+    border-bottom: 5px dashed red;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+    gap: 10px;
+    margin-bottom: 15px;
+
+}
+
+.resultModal-box-item{
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.resultModal-box-item-left{
+    max-width: 150px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.resultModal-box-item-left-icon{
+    /* border: 1px solid red; */
+    width: 40px;
+    height: 40px;
+}
+
+.resultModal-box-item-left-text, .resultModal-box-item-left-textLevel, .resultModal-box-item-left-textGameType, .resultModal-box-item-left-highScore{
+    /* border: 1px solid red; */
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.resultModal-box-item-comment, .resultModal-box-item-commentHighScore{
+    /* border: 1px solid red; */
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.resultModal-box-content{
+    max-width: 290px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.resultModal-box-content-icon{
+    /* border: 1px solid red; */
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.resultModal-box-content-icon:hover{
+    box-shadow: 0 0 10px 3px black;
+    transition: all .3s ease;
+}
+
+.resultModal-box-content-icon:active{
+    transform: scale(.9);
+}
+
+.resultModal-box-thanks{
+    margin-bottom: 5px;
+    /* border: 1px solid red; */
+    text-align: center;
+    color: blue;
+    font-size: 25px;
+    font-family: "Monotype Corsiva";
+}
+
+.btnPrint{
+    background-color: #94EB1F;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    letter-spacing: 1px;
+    /* border: 1px solid red; */
+    border: 2px solid black;
+    transition: all .3s ease;
+    /* box-shadow: 0 0 10px 3px red; */
+
+}
+
+.btnPrint:hover{
+    box-shadow: 0 0 10px 3px black;
+    transition: all .3s ease;
+}
+
+.btnPrint:active{
+    transform: scale(.9);
+}
+
+
+
+
+/* GAME RESULT MODAL STYLES END */
+
+
+
+
+/* FOOTER */
+.footer{
+    background-color: #94EB1F;
+    width: 80vw;
+    margin: 0 auto ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+}
+
+.footer-time{
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.footer-list{
+    margin-right: 30px;
+    display: flex;
+    list-style-type: none;
+    max-width: 150px;
+    width: 100%;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+}
+
+.footer-item-link{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: italic;
+}
+
+
+
+
+/* PRINTING END RESULT CODE START*/
+@media print {
+    body * { visibility: hidden; }               /* hamma narsani ko‘rinmas qilyapmiz */
+    #printable, #printable * { visibility: visible; } /* faqat printable ko‘rinadi */
+    #printable { position: absolute; left: 0; top: 0; width: 100%; }
+}
+
+/* PRINTING END RESULT CODE END*/

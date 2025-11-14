@@ -3,6 +3,7 @@ const elCategory = document.querySelector(".hero-list");
 const elModal = document.querySelector(".modalLang");
 const elDuration = document.querySelector(".modalLang-durationList")
 
+
 elDuration.addEventListener("click", (e) => {
     if(e.target.className === "modalLang-durationItem-btn"){
         localStorage.setItem("durationGame", e.target.textContent)
@@ -34,7 +35,9 @@ elModal.addEventListener("click", (e) => {
         }
         else{
             if (JSON.parse(localStorage.getItem("choiceData")).category === "Ismlar"){
-                window.location.href = "dictionary.html"   
+                window.location.href = "dictionary.html"  
+                // console.log(backgroundMusic);
+                
                 window.scrollTo({
                     top: 0,
                 })    
