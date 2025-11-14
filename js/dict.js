@@ -187,6 +187,9 @@ function changeWordFunc(){
                     getHighScoreComment.textContent = "Afsuski, ball to'play olmadingiz"
                     audioControl.src = "./music/fail-celebrate.mp3"
                     audioControl.play();
+                    setTimeout(() => {
+                        audioControl.pause()
+                    }, 3500)               
                     // audioControl.loop = true;
                 }
                 else{
@@ -202,6 +205,9 @@ function changeWordFunc(){
                             getHighScore.textContent = (coin + " / " + localStorage.getItem("highScore") + ":")
                             audioControl.src = "./music/winner-celebrate.mp3"
                             audioControl.play();
+                            setTimeout(() => {
+                                audioControl.pause()
+                            }, 3500)               
                             getHighScoreComment.textContent = "Rekordingizni yangiladingiz, ofarin!"
                             getEmoji.classList.add("resultModal-emojiReactions-active")    
                             setTimeout (() => {
@@ -212,12 +218,18 @@ function changeWordFunc(){
                             getHighScoreComment.textContent = ("To'plagan balingiz avvalgi rekord ball bilan teng bo'lib qoldi")
                             getHighScore.textContent = (coin + " / " + localStorage.getItem("highScore") + ":")
                             audioControl.src = "./music/fail-celebrate.mp3"
-                            audioControl.play();                            
+                            audioControl.play();
+                            setTimeout(() => {
+                                audioControl.pause()
+                            }, 3500)                            
                         }
                         else{
                             getHighScore.textContent = (coin + " / " + localStorage.getItem("highScore") + ":")
                             audioControl.src = "./music/fail-celebrate.mp3"
                             audioControl.play();
+                            setTimeout(() => {
+                                audioControl.pause()
+                            }, 3500)               
                             getHighScoreComment.textContent = ("Rekord yangilanishiga " + (localStorage.getItem("highScore") - coin) + " ball yetmadi")
                             getEmoji.src = "./images/sad.png"
                             getEmoji.classList.add("resultModal-emojiReactions-active")    
