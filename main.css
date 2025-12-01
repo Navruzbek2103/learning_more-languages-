@@ -2471,7 +2471,7 @@ header{
 }
 
 .footer-time{
-    color: white;
+    color: black;
     font-weight: bold;
     padding: 10px 15px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -2490,10 +2490,237 @@ header{
 }
 
 .footer-item-link{
-    color: white;
+    color: black;
     font-weight: bold;
     text-decoration: none;
     font-style: italic;
+}
+
+@media only screen and (max-width: 1200px){
+    .footer{
+        /* background-color: #94EB1F; */
+        width: 85vw;
+        /* margin: 0 auto ; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: space-between; */
+        /* padding: 10px 25px; */
+    }
+
+    /* .footer-time{ */
+        /* color: white; */
+        /* font-weight: bold; */
+        /* padding: 10px 15px; */
+        /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+        /* font-size: 18px; */
+        /* font-style: italic; */
+    /* } */
+
+    /* .footer-list{ */
+        /* margin-right: 30px; */
+        /* display: flex; */
+        /* list-style-type: none; */
+        /* max-width: 150px; */
+        /* width: 100%; */
+        /* border: 1px solid red; */
+        /* justify-content: space-between; */
+    /* } */
+
+    /* .footer-item-link{ */
+        /* color: white; */
+        /* font-weight: bold; */
+        /* text-decoration: none; */
+        /* font-style: italic; */
+    /* } */
+}
+
+@media only screen and (max-width: 1050px){
+    .footer{
+        /* background-color: #94EB1F; */
+        width: 90vw;
+        /* margin: 0 auto ; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: space-between; */
+        /* padding: 10px 25px; */
+    }
+
+    /* .footer-time{ */
+        /* color: white; */
+        /* font-weight: bold; */
+        /* padding: 10px 15px; */
+        /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+        /* font-size: 18px; */
+        /* font-style: italic; */
+    /* } */
+
+    /* .footer-list{ */
+        /* margin-right: 30px; */
+        /* display: flex; */
+        /* list-style-type: none; */
+        /* max-width: 150px; */
+        /* width: 100%; */
+        /* border: 1px solid red; */
+        /* justify-content: space-between; */
+    /* } */
+
+    /* .footer-item-link{ */
+        /* color: white; */
+        /* font-weight: bold; */
+        /* text-decoration: none; */
+        /* font-style: italic; */
+    /* } */
+}
+
+@media only screen and (max-width: 1050px){
+    .footer{
+        /* background-color: #94EB1F; */
+        width: 95vw;
+        /* margin: 0 auto ; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: space-between; */
+        /* padding: 10px 25px; */
+    }
+
+    /* .footer-time{ */
+        /* color: white; */
+        /* font-weight: bold; */
+        /* padding: 10px 15px; */
+        /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+        /* font-size: 18px; */
+        /* font-style: italic; */
+    /* } */
+
+    /* .footer-list{ */
+        /* margin-right: 30px; */
+        /* display: flex; */
+        /* list-style-type: none; */
+        /* max-width: 150px; */
+        /* width: 100%; */
+        /* border: 1px solid red; */
+        /* justify-content: space-between; */
+    /* } */
+
+    /* .footer-item-link{ */
+        /* color: white; */
+        /* font-weight: bold; */
+        /* text-decoration: none; */
+        /* font-style: italic; */
+    /* } */
+}
+
+@media only screen and (max-width: 730px){
+    .footer{
+        /* background-color: #94EB1F; */
+        width: 96vw;
+        /* margin: 0 auto ; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: space-between; */
+        /* padding: 10px 25px; */
+    }
+
+    /* .footer-time{ */
+        /* color: white; */
+        /* font-weight: bold; */
+        /* padding: 10px 15px; */
+        /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+        /* font-size: 18px; */
+        /* font-style: italic; */
+    /* } */
+
+    /* .footer-list{ */
+        /* margin-right: 30px; */
+        /* display: flex; */
+        /* list-style-type: none; */
+        /* max-width: 150px; */
+        /* width: 100%; */
+        /* border: 1px solid red; */
+        /* justify-content: space-between; */
+    /* } */
+
+    /* .footer-item-link{ */
+        /* color: white; */
+        /* font-weight: bold; */
+        /* text-decoration: none; */
+        /* font-style: italic; */
+    /* } */
+}
+@media only screen and (max-width: 620px){
+    .footer{
+        /* background-color: #94EB1F; */
+        width: 100vw;
+        /* margin: 0 auto ; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: space-between; */
+        /* padding: 10px 25px; */
+    }
+
+    /* .footer-time{ */
+        /* color: white; */
+        /* font-weight: bold; */
+        /* padding: 10px 15px; */
+        /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+        /* font-size: 18px; */
+        /* font-style: italic; */
+    /* } */
+
+    /* .footer-list{ */
+        /* margin-right: 30px; */
+        /* display: flex; */
+        /* list-style-type: none; */
+        /* max-width: 150px; */
+        /* width: 100%; */
+        /* border: 1px solid red; */
+        /* justify-content: space-between; */
+    /* } */
+
+    /* .footer-item-link{ */
+        /* color: white; */
+        /* font-weight: bold; */
+        /* text-decoration: none; */
+        /* font-style: italic; */
+    /* } */
+}
+
+@media only screen and (max-width: 420px){
+    /* .footer{ */
+        /* background-color: #94EB1F; */
+        /* width: 100vw; */
+        /* margin: 0 auto ; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: space-between; */
+        /* padding: 10px 25px; */
+    /* } */
+
+    /* .footer-time{ */
+        /* color: white; */
+        /* font-weight: bold; */
+        /* padding: 10px 15px; */
+        /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+        /* font-size: 18px; */
+        /* font-style: italic; */
+    /* } */
+
+    .footer-list{
+        /* margin-right: 30px; */
+        /* display: flex; */
+        /* list-style-type: none; */
+        max-width: 130px;
+        /* border: 1px solid red; */
+        /* width: 100%; */
+        /* justify-content: space-between; */
+    }
+
+    /* .footer-item-link{ */
+        /* color: white; */
+        /* font-weight: bold; */
+        /* text-decoration: none; */
+        /* font-style: italic; */
+    /* } */
 }
 
 
