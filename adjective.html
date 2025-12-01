@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./main.css">
+        <title>Document</title>
+    </head>
+    <body>
+        
+        
+   <header class="header">
+        <nav class="nav">
+            <a href="./index.html" class="nav-link">Arabic Language</a>
+
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-item-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <p class="nav-item-linkP">O'yinlar</p>
+                    <ul class="nav-sublist">
+                        <li class="nav-subitem">
+                            <a href="./index.html#hero" class="nav-subitem-link">
+                                "Tarjima qil" o'yini
+                            </a>
+                        </li>
+                        <li class="nav-subitem">
+                            <a href="#" class="nav-subitem-link">
+                                "Tarjima qil" o'yini
+                            </a>
+                        </li>
+                        <li class="nav-subitem">
+                            <a href="#" class="nav-subitem-link">
+                                "Tarjima qil" o'yini
+                            </a>
+                        </li>
+                        <li class="nav-subitem">
+                            <a href="#" class="nav-subitem-link">
+                                "Tarjima qil" o'yini
+                            </a>
+                        </li>
+                        <li class="nav-subitem">
+                            <a href="#" class="nav-subitem-link">
+                                "Tarjima qil" o'yini
+                            </a>
+                        </li>
+                        <li class="nav-subitem">
+                            <a href="#" class="nav-subitem-link">
+                                "Tarjima qil" o'yini
+                            </a>
+                        </li>
+                        <li class="nav-subitem">
+                            <a href="#" class="nav-subitem-link">
+                                "Tarjima qil" o'yini
+                            </a>
+                        </li>
+                        <li class="nav-subitem">
+                            <a href="#" class="nav-subitem-link">
+                                "Tarjima qil" o'yini
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-item-link">Qoidalar</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-item-link">Profile</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <audio class="hero-backgroundMusicGame" loop src="./music/background-music-one.mp3" autoplay="true"></audio>
+
+                <h2 class="hero-heading">Sifatlar</h2>
+                <div class="hero-box">
+                    <div class="hero-timeContent">
+                        <p class="hero-coinText">Tanga: <span class="hero-coinText-span">0</span></p>
+                        <h2 class="hero-timer">0 <span class="hero-timer-semicolon">:</span><span class="hero-timer-time">09</span> 
+                        </h2>
+                        <p class="hero-errorText">Xatolik: <span class="hero-errorText-span">0</span></p>
+                        <!-- <div class="hero-timer-addTime">+3</div> -->
+                    </div>
+                    <h3 class="hero-word">Tayyorlaning...</h3>
+                    <h3 class="hero-trueAnswer">To'g'ri javob</h3>
+                    <button class="hero-watchResult">Natijalarimni ko'rish</button>
+                    <img src="./images/check.png" alt="check icon" class="hero-word-found">
+                </div>
+            </div>
+        </section>
+        <section class="resultModal" id="printable">
+            <div class="container">
+                <div class="resultModal-box">
+                    <img src="./images/happy.png" alt="emoji reaction icon" class="resultModal-emojiReactions" id="reactionEmoji">
+                    <h3 class="resultModal-box-title">Natijalaringiz:</h3>
+                    <img src="./images/close-icon.png" alt="the close icon" class="resultModal-box-closeIcon">    
+                    <ul class="resultModal-box-list">
+                        <li class="resultModal-box-item">
+                            <div class="resultModal-box-item-left">
+                                <img src="./images/run-icon.png" alt="run icon" class="resultModal-box-item-left-icon">
+                                <p class="resultModal-box-item-left-textGameType">empty: </p>
+                            </div>
+                            <p class="resultModal-box-item-comment">o'yin turi</p>
+                        </li>
+
+                        <li class="resultModal-box-item">
+                            <div class="resultModal-box-item-left">
+                                <img src="./images/chronometer.png" alt="time icon" class="resultModal-box-item-left-icon">
+                                <p class="resultModal-box-item-left-text">0:00:</p>
+                            </div>
+                            <p class="resultModal-box-item-comment">o'yin davomiyligi</p>
+                        </li>
+
+                        <li class="resultModal-box-item">
+                            <div class="resultModal-box-item-left">
+                                <img src="./images/number-1.png" alt="number icon" class="resultModal-box-item-left-icon">
+                                <p class="resultModal-box-item-left-text"><span class="resultModal-box-item-left-text-spanAllWords">00</span> ta: </p>
+                            </div>
+                            <p class="resultModal-box-item-comment">umumiy savollar soni</p>
+                        </li>
+
+                        <li class="resultModal-box-item">
+                            <div class="resultModal-box-item-left">
+                                <img src="./images/check.png" alt="check icon" class="resultModal-box-item-left-icon">
+                                <p class="resultModal-box-item-left-text"><span class="resultModal-box-item-left-text-spanTrueAnswer">0</span> ta: </p>
+                            </div>
+                            <p class="resultModal-box-item-comment">to'g'ri javoblar</p>
+                        </li>
+
+                        <li class="resultModal-box-item">
+                            <div class="resultModal-box-item-left">
+                                <img src="./images/cross-sign.png" alt="cross sign icon" class="resultModal-box-item-left-icon">
+                                <p class="resultModal-box-item-left-text"><span class="resultModal-box-item-left-text-spanFalseAnswer">0</span> ta: </p>
+                            </div>
+                            <p class="resultModal-box-item-comment">noto'g'ri javoblar</p>
+                        </li>
+
+                        <li class="resultModal-box-item">
+                            <div class="resultModal-box-item-left">
+                                <img src="./images/fire.png" alt="fire icon" class="resultModal-box-item-left-icon">
+                                <p class="resultModal-box-item-left-textLevel">empty: </p>
+                            </div>
+                            <p class="resultModal-box-item-comment">qiyinlilik darajasi</p>
+                        </li>
+
+                        <li class="resultModal-box-item">
+                            <div class="resultModal-box-item-left">
+                                <img src="./images/high-quality.png" alt="high quality icon" class="resultModal-box-item-left-icon">
+                                <p class="resultModal-box-item-left-highScore">empty: </p>
+                            </div>
+                            <p class="resultModal-box-item-commentHighScore">Rekordni yangiladingiz, ofarin!</p>
+                        </li>
+                    </ul>
+                    <p class="resultModal-box-thanks">Ishtirokingiz uchun tashakkur! 😊</p>
+                    <div class="resultModal-box-content">
+                        <img src="./images/reload.png" alt="reload icon" class="resultModal-box-content-icon">
+                        <button class="btnPrint">Natijani yuklab olish</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-time">Timer</p>
+            <ul class="footer-list">
+                <li class="footer-item">
+                    <a href="#" class="footer-item-link">
+                        Blog
+                    </a>
+                </li>
+                <li class="footer-item">
+                    <a href="#" class="footer-item-link">
+                        Blog
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="./js/allData.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/dict.js"></script>
+</body>
+</html>

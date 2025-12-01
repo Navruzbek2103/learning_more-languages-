@@ -1053,7 +1053,7 @@ const allData = [
     
     {
         wordId: 115,
-        category: "ismlar",
+        category: "sifatlar",
         time: time,
         uz: "Katta",
         arabic: `كَبِيرٌ`,
@@ -1456,7 +1456,7 @@ const allData = [
     },
     {
         wordId: 159,
-        category: "ismlar",
+        category: "sifatlar",
         time: time,
         uz: "Eski",
         arabic: `قَدِيمٌ`,
@@ -2402,7 +2402,7 @@ const allData = [
     },
     {
         wordId: 262,
-        category: "ismlar",
+        category: "sifatlar",
         time: time,
         uz: "Qizil",
         arabic: `أَحْمَرُ`,
@@ -3413,7 +3413,7 @@ const allData = [
     },
     {
         wordId: 372,
-        category: "ismlar",
+        category: "sifatlar",
         time: time,
         uz: "Chiroyli",
         arabic: `جَمِيلٌ`,
@@ -3504,7 +3504,7 @@ const allData = [
     },
     {
         wordId: 382,
-        category: "ismlar",
+        category: "sifatlar",
         time: time,
         uz: "Mashhur",
         arabic: `مَشْهُورٌ`,
@@ -3541,7 +3541,7 @@ const allData = [
     },
     {
         wordId: 386,
-        category: "ismlar",
+        category: "sifatlar",
         time: time,
         uz: "Yangi",
         arabic: `جَدِيدٌ`,
@@ -7262,7 +7262,7 @@ const allData = [
     },
     {
         wordId: 789,
-        category: "ismlar",
+        category: "sifatlar",
         time: time,
         uz: "Zangori (muannas)",
         arabic: `زَرْقَاءُ`,
@@ -7271,7 +7271,7 @@ const allData = [
     },
     {
         wordId: 790,
-        category: "ismlar",
+        category: "sifatlar",
         time: time,
         uz: "Zangori (muzakkar)",
         arabic: `أَزْرَقُ`,
@@ -7281,7 +7281,7 @@ const allData = [
 
     {
         wordId: 791,
-        category: "ismlar",
+        category: "sifatlar",
         time: time,
         uz: "Sariq (muannas)",
         arabic: `صَفْرَاءُ`,
@@ -7290,7 +7290,7 @@ const allData = [
     },
     {
         wordId: 792,
-        category: "ismlar",
+        category: "sifatlar",
         time: time,
         uz: "Sariq (muzakkar)",
         arabic: `أَصْفَرُ`,
@@ -7318,7 +7318,7 @@ const allData = [
     
     {
         wordId: 795,
-        category: "ismlar",
+        category: "sifatlar",
         time: time,
         uz: "Qora (muzakkar)",
         arabic: `أَسْوَدُ`,
@@ -7327,7 +7327,7 @@ const allData = [
     },
     {
         wordId: 796,
-        category: "ismlar",
+        category: "sifatlar",
         time: time,
         uz: "Qora (muannas)",
         arabic: `سَوْدَاءُ`,
@@ -7336,7 +7336,7 @@ const allData = [
     },
     {
         wordId: 797,
-        category: "ismlar",
+        category: "sifatlar",
         time: time,
         uz: "Qizil (muannas)",
         arabic: `حَمْرَاءُ`,
@@ -7345,7 +7345,7 @@ const allData = [
     },
     {
         wordId: 798,
-        category: "ismlar",
+        category: "sifatlar",
         time: time,
         uz: "Qizil (muzakkar)",
         arabic: `أَحْمَرُ`,
@@ -7354,7 +7354,7 @@ const allData = [
     },
     {
         wordId: 799,
-        category: "ismlar",
+        category: "sifatlar",
         time: time,
         uz: "Jigarrang (muzakkar)",
         arabic: `بُنِّيٌّ`,
@@ -7364,7 +7364,7 @@ const allData = [
 
     {
         wordId: 800,
-        category: "ismlar",
+        category: "sifatlar",
         time: time,
         uz: "Jigarrang (muannas)",
         arabic: `بُنِّيَّةٌ`,
@@ -7374,7 +7374,7 @@ const allData = [
 
     {
         wordId: 801,
-        category: "ismlar",
+        category: "sifatlar",
         time: time,
         uz: "Yashil (muannas)",
         arabic: `خَضْرَاءُ`,
@@ -7383,7 +7383,7 @@ const allData = [
     },
     {
         wordId: 802,
-        category: "ismlar",
+        category: "sifatlar",
         time: time,
         uz: "Yashil (muzakkar)",
         arabic: `أَخْضَرُ`,
@@ -7392,7 +7392,7 @@ const allData = [
     },
     {
         wordId: 803,
-        category: "ismlar",
+        category: "sifatlar",
         time: time,
         uz: "Oq (muzakkar)",
         arabic: `أَبْيَضُ`,
@@ -7401,7 +7401,7 @@ const allData = [
     },
     {
         wordId: 804,
-        category: "ismlar",
+        category: "sifatlar",
         time: time,
         uz: "Oq (muannas)",
         arabic: `بَيْضَاءُ`,
@@ -8119,7 +8119,7 @@ const allData = [
 
     {
         wordId: 881,
-        category: "ismlar",
+        category: "sifatlar",
         time: time,
         uz: "Toza",
         arabic: `نَظِيفٌ`,
@@ -8183,7 +8183,7 @@ const allData = [
     },
     {
         wordId: 888,
-        category: "ismlar",
+        category: "sifatlar",
         time: time,
         uz: "Uzun",
         arabic: `طَوِيلٌ`,
@@ -8652,7 +8652,7 @@ const allData = [
     },
     {
         wordId: 939,
-        category: "ismlar",
+        category: "sifatlar",
         time: time,
         uz: "Oz",
         arabic: `قَلِيل`,
@@ -8909,7 +8909,7 @@ const allData = [
     },
     {
         wordId: 967,
-        category: "ismlar",
+        category: "sifatlar",
         time: time,
         uz: "Xunuk",
         arabic: `قَبِيح`,
@@ -8918,7 +8918,7 @@ const allData = [
     },
     {
         wordId: 968,
-        category: "ismlar",
+        category: "sifatlar",
         time: time,
         uz: "Kichik",
         arabic: `صَغِير`,
@@ -9942,6 +9942,98 @@ const allData = [
         en: "",
         ru: "",   
     },
+    {
+        wordId: 1080,
+        category: "sifatlar",
+        time: time,
+        uz: "Keng",
+        arabic: `وَاسِعَةٌ`,
+        en: "",
+        ru: "",   
+    },
+
+    {
+        wordId: 1081,
+        category: "",
+        time: time,
+        uz: "",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1082,
+        category: "",
+        time: time,
+        uz: "",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1083,
+        category: "",
+        time: time,
+        uz: "",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1084,
+        category: "",
+        time: time,
+        uz: "",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    
+    {
+        wordId: 1085,
+        category: "",
+        time: time,
+        uz: "",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1086,
+        category: "",
+        time: time,
+        uz: "",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1087,
+        category: "",
+        time: time,
+        uz: "",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1088,
+        category: "",
+        time: time,
+        uz: "",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1089,
+        category: "",
+        time: time,
+        uz: "",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
     
 
 
@@ -9953,98 +10045,6 @@ const allData = [
 
 
     // ##################################################################
-    // {
-    //     wordId: 80,
-    //     category: "",
-    //     time: time,
-    //     uz: "",
-    //     arabic: ``,
-    //     en: "",
-    //     ru: "",   
-    // },
-
-    // {
-    //     wordId: 81,
-    //     category: "",
-    //     time: time,
-    //     uz: "",
-    //     arabic: ``,
-    //     en: "",
-    //     ru: "",   
-    // },
-    // {
-    //     wordId: 82,
-    //     category: "",
-    //     time: time,
-    //     uz: "",
-    //     arabic: ``,
-    //     en: "",
-    //     ru: "",   
-    // },
-    // {
-    //     wordId: 83,
-    //     category: "",
-    //     time: time,
-    //     uz: "",
-    //     arabic: ``,
-    //     en: "",
-    //     ru: "",   
-    // },
-    // {
-    //     wordId: 84,
-    //     category: "",
-    //     time: time,
-    //     uz: "",
-    //     arabic: ``,
-    //     en: "",
-    //     ru: "",   
-    // },
-    
-    // {
-    //     wordId: 85,
-    //     category: "",
-    //     time: time,
-    //     uz: "",
-    //     arabic: ``,
-    //     en: "",
-    //     ru: "",   
-    // },
-    // {
-    //     wordId: 86,
-    //     category: "",
-    //     time: time,
-    //     uz: "",
-    //     arabic: ``,
-    //     en: "",
-    //     ru: "",   
-    // },
-    // {
-    //     wordId: 87,
-    //     category: "",
-    //     time: time,
-    //     uz: "",
-    //     arabic: ``,
-    //     en: "",
-    //     ru: "",   
-    // },
-    // {
-    //     wordId: 88,
-    //     category: "",
-    //     time: time,
-    //     uz: "",
-    //     arabic: ``,
-    //     en: "",
-    //     ru: "",   
-    // },
-    // {
-    //     wordId: 89,
-    //     category: "",
-    //     time: time,
-    //     uz: "",
-    //     arabic: ``,
-    //     en: "",
-    //     ru: "",   
-    // },
     // {
     //     wordId: 90,
     //     category: "",

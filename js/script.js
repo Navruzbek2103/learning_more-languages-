@@ -59,6 +59,18 @@ elModal.addEventListener("click", (e) => {
             
             
 
+
+            else if (JSON.parse(localStorage.getItem("choiceData")).category === "Sifatlar"){
+                window.location.href = "adjective.html"   
+                window.scrollTo({
+                    top: 0,
+                })        
+                let filteredCategory = allData.filter(data => data.category === "sifatlar")
+                localStorage.setItem("filteredCategoryName", JSON.stringify(filteredCategory))
+            }
+
+
+
             
             else if (JSON.parse(localStorage.getItem("choiceData")).category === "Gaplar"){
                 window.location.href = "sentences.html"   
