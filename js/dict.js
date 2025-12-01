@@ -27,7 +27,7 @@ const audioControl = document.querySelector(".hero-backgroundMusicGame")
 const getEmoji = document.querySelector(".resultModal-emojiReactions")
 
 
-console.log(audioControl);
+// console.log(audioControl);
 
 
 
@@ -44,7 +44,7 @@ window.addEventListener("load", () => {
 
 
 if(localStorage.getItem("durationGame") === "1 min"){
-    gameTime = 60;
+    gameTime = 6;
 }
 else if(localStorage.getItem("durationGame") === "3 min"){
     gameTime = 180;
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
         elCoin.textContent = coin
         foundWord.style.display = "none"
         trueAnswer.style.display = "block"
-        trueAnswer.textContent = JSON.parse(localStorage.getItem("wordOnWindow")).arabic
+        
     }
 })
 })
@@ -180,6 +180,17 @@ function changeWordFunc(){
                 //  
                 elBtnPrint.addEventListener("click", () => {
                     window.print();
+                    let username = prompt("Ismingizni kiriting...")
+                    const pdfFilename = username + "ning natijalari.pdf";
+
+                    html2pdf()
+                        .from(document.querySelector(".resultModal-box"))
+                        .set({ 
+                        margin: 10, 
+                        filename: pdfFilename, 
+                        html2canvas: { scale: 2 } 
+                        })
+                        .save();
                 });
                 
                 if(coin === 0){
@@ -264,14 +275,13 @@ function changeWordFunc(){
                     elWord.textContent = randomWord.uz
                     allWords = allWords + 1;
                     elWord.style.color = "black"
-                    // console.log(allWords);
-                    // trueAnswer.textContent = randomWord.
                     trueAnswer.textContent = randomWord.arabic
                         
                 }
                 else{
                     elWord.textContent = "Ushbu lug'at bazaga hali kiritilmadi!"
-                    elWord.style.color = "red"    
+                    elWord.style.color = "red" 
+                       
                 }
             }
 
@@ -281,6 +291,9 @@ function changeWordFunc(){
                 if(randomWord.arabic !== ""){
                     elWord.textContent = randomWord.arabic
                     elWord.style.color = "black"
+                    allWords = allWords + 1;
+                    trueAnswer.textContent = randomWord.uz
+                    
                 }
                 else{
                     elWord.textContent = "Ushbu lug'at bazaga hali kiritilmadi!"
@@ -295,6 +308,8 @@ function changeWordFunc(){
                 if(randomWord.en !== ""){
                     elWord.textContent = randomWord.en
                     elWord.style.color = "black"
+                    allWords = allWords + 1;
+                    trueAnswer.textContent = randomWord.uz
                 }
                 else{
                     elWord.textContent = "Ushbu lug'at bazaga hali kiritilmadi!"
@@ -307,8 +322,13 @@ function changeWordFunc(){
                 if(randomWord.ru !== ""){
                     elWord.textContent = randomWord.ru
                     elWord.style.color = "black"
+                    allWords = allWords + 1;
+                    trueAnswer.textContent = randomWord.uz
                 }
                 else{
+                    // clearInterval(animationSemicolon1)
+                    // clearInterval(animationSemicolon2)
+                    // clearInterval(changingTypeGame)
                     elWord.textContent = "Ushbu lug'at bazaga hali kiritilmadi!"
                     elWord.style.color = "red"    
                 }

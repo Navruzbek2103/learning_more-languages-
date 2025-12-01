@@ -3250,7 +3250,7 @@ const allData = [
         category: "ismlar",
         time: time,
         uz: "Elak",
-        arabic: `مَنْخَلٌ`,
+        arabic: `مُنْخَل`,
         en: "",
         ru: "",   
     },
