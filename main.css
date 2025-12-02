@@ -4549,8 +4549,8 @@ header{
 }
 
 @media only screen and (max-width: 992px){
-    .resultModal{
-        display: block;
+    /* .resultModal{ */
+        /* display: none; */
         /* position: absolute; */
         /* z-index: 9; */
         /* top: 0; */
@@ -4559,7 +4559,7 @@ header{
         /* height: 100%; */
         /* background-color: rgba(0, 0, 0, .8); */
         /* border: 1px solid red; */
-    }
+    /* } */
 
     /* .resultModal-active{
         display: block;
