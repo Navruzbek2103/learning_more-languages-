@@ -1885,7 +1885,7 @@ header{
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, .8);
-    z-index: 1;
+    z-index: 9;
 }
 
 .modalLang-active{
@@ -2972,10 +2972,10 @@ header{
         /* gap: 20px; */
         /* border: 1px solid red; */
         /* max-width: 90vw; */
-        margin: 14% auto;
+        margin: 15% auto;
         /* background-color: white; */
         padding: 50px 40px;
-        /* border-radius: 25px; */
+        border-radius: 15px;
     }
 
     .modalLang-box-closeIcon{
@@ -3152,7 +3152,7 @@ header{
         gap: 15px;
         /* border: 1px solid red; */
         /* max-width: 90vw; */
-        margin: 19% auto;
+        margin: 20% auto;
         /* background-color: white; */
         padding: 40px 20px;
         /* border-radius: 25px; */
@@ -3332,7 +3332,7 @@ header{
         /* gap: 15px; */
         /* border: 1px solid red; */
         /* max-width: 90vw; */
-        margin: 15% auto;
+        margin: 25% auto;
         /* background-color: white; */
         /* padding: 40px 20px; */
         /* border-radius: 25px; */
@@ -3986,10 +3986,10 @@ header{
 
 @media only screen and (max-width: 600px){
     .hero-box{
-        /* border: 1px solid red; */
+        /* border: 1px solid red !important; */
         max-width: 950px;
         /* width: 100%; */
-        margin: 25px auto !important;
+        margin: 40px auto !important;
         /* display: flex; */
         /* flex-direction: column; */
         /* align-items: center; */

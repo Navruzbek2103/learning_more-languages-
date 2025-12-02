@@ -44,7 +44,7 @@ window.addEventListener("load", () => {
 
 
 if(localStorage.getItem("durationGame") === "1 min"){
-    gameTime = 6;
+    gameTime = 60;
 }
 else if(localStorage.getItem("durationGame") === "3 min"){
     gameTime = 180;
