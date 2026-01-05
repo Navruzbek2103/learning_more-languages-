@@ -7578,7 +7578,7 @@ const allData = [
         wordId: 823,
         category: "ismlar",
         time: time,
-        uz: "Deraza",
+        uz: "Deraza 2",
         arabic: `نَافِذَةٌ`,
         en: "",
         ru: "",   
@@ -11264,9 +11264,9 @@ const allData = [
     },
     {
         wordId: 1224,
-        category: "",
+        category: "ismlar",
         time: time,
-        uz: "",
+        uz: "Lavh, taxtacha",
         arabic: ``,
         en: "",
         ru: "",   
@@ -11274,50 +11274,425 @@ const allData = [
     
     {
         wordId: 1225,
-        category: "",
+        category: "ismlar",
         time: time,
-        uz: "",
+        uz: "Lavhlar, taxtachalar",
         arabic: ``,
         en: "",
         ru: "",   
     },
     {
         wordId: 1226,
-        category: "",
+        category: "ismlar",
         time: time,
-        uz: "",
+        uz: "Chizg'ichlar",
         arabic: ``,
         en: "",
         ru: "",   
     },
     {
         wordId: 1227,
-        category: "",
+        category: "ismlar",
         time: time,
-        uz: "",
+        uz: "Chizg'ich",
         arabic: ``,
         en: "",
         ru: "",   
     },
     {
         wordId: 1228,
-        category: "",
+        category: "fe'llar",
         time: time,
-        uz: "",
+        uz: "Ber, keltir",
         arabic: ``,
         en: "",
         ru: "",   
     },
     {
         wordId: 1229,
-        category: "",
+        category: "ismlar",
+        time: time,
+        uz: "Sharikli ruchka",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1230,
+        category: "ismlar",
+        time: time,
+        uz: "Peroli ruchka",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+
+    {
+        wordId: 1231,
+        category: "ismlar",
+        time: time,
+        uz: "Eshik ushlagichi",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1232,
+        category: "ismlar",
+        time: time,
+        uz: "Siyohdon",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1233,
+        category: "ismlar",
+        time: time,
+        uz: "Siyohdonlar",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1234,
+        category: "ismlar",
+        time: time,
+        uz: "Doskalar 2",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    
+    {
+        wordId: 1235,
+        category: "ismlar",
+        time: time,
+        uz: "Doska 2",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1236,
+        category: "ismlar",
+        time: time,
+        uz: "Qog'ozlar",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1237,
+        category: "ismlar",
+        time: time,
+        uz: "Qog'oz",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1238,
+        category: "ismlar",
+        time: time,
+        uz: "Siyohlar",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1239,
+        category: "ismlar",
+        time: time,
+        uz: "Siyoh",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1240,
+        category: "ismlar",
+        time: time,
+        uz: "Pat, pero",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+
+    {
+        wordId: 1241,
+        category: "ismlar",
+        time: time,
+        uz: "Oddiy bo'yoq, qo'rg'oshin qalam",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1242,
+        category: "ismlar",
+        time: time,
+        uz: "Siyoh shimdirgich, bosma",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1243,
+        category: "ismlar",
+        time: time,
+        uz: "O'qituvchilar",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1244,
+        category: "ismlar",
+        time: time,
+        uz: "Stul, kursi",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    
+    {
+        wordId: 1245,
+        category: "ismlar",
+        time: time,
+        uz: "Stullar, kursilar",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1246,
+        category: "ismlar",
+        time: time,
+        uz: "Maktablar",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1247,
+        category: "ismlar",
+        time: time,
+        uz: "O'qituvchining stoli",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1248,
+        category: "ismlar",
+        time: time,
+        uz: "Darslar",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1249,
+        category: "ismlar",
+        time: time,
+        uz: "Dars",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1250,
+        category: "ismlar",
+        time: time,
+        uz: "O'chirg'ichlar (rezinkalar)",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+
+    {
+        wordId: 1251,
+        category: "ismlar",
+        time: time,
+        uz: "O'chirg'ich (rezinka)",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1252,
+        category: "ismlar",
+        time: time,
+        uz: "O'quvchilar",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1253,
+        category: "ismlar",
+        time: time,
+        uz: "Yozmoq",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1254,
+        category: "ismlar",
+        time: time,
+        uz: "Sinflar",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    
+    {
+        wordId: 1255,
+        category: "ismlar",
+        time: time,
+        uz: "O'quvchining partasi",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1256,
+        category: "ismlar",
+        time: time,
+        uz: "O'qimoq (fe'l shakli)",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1257,
+        category: "ismlar",
+        time: time,
+        uz: "Lattalar, doska artgichlar",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1258,
+        category: "ismlar",
+        time: time,
+        uz: "Latta, doska artgich",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    {
+        wordId: 1259,
+        category: "ismlar",
+        time: time,
+        uz: "Stollar",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+    
+    {
+        wordId: 1260,
+        category: "ismlar",
+        time: time,
+        uz: "U yerda",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+        
+    {
+        wordId: 1261,
+        category: "ismlar",
+        time: time,
+        uz: "Sumkalar",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+        
+    {
+        wordId: 1262,
+        category: "ismlar",
+        time: time,
+        uz: "Sumkalar",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+        
+    {
+        wordId: 1263,
+        category: "ismlar",
+        time: time,
+        uz: "Derazalar",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+        
+    {
+        wordId: 1264,
+        category: "ismlar",
+        time: time,
+        uz: "Soatlar",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+        
+    {
+        wordId: 1265,
+        category: "ismlar",
+        time: time,
+        uz: "Soat",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+        
+    {
+        wordId: 1266,
+        category: "ismlar",
+        time: time,
+        uz: "Gugurt",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+        
+    {
+        wordId: 1267,
+        category: "ismlar",
+        time: time,
+        uz: "Kirmoq (fe'l shakli)",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },
+
+    {
+        wordId: 1268,
+        category: "ismlar",
+        time: time,
+        uz: "Bo'r (doskaga yozish uchun)",
+        arabic: ``,
+        en: "",
+        ru: "",   
+    },    
+    
+    {
+        wordId: 1269,
+        category: "ismlar",
         time: time,
         uz: "",
         arabic: ``,
         en: "",
         ru: "",   
     },
-    
 
 
 
@@ -11328,6 +11703,507 @@ const allData = [
 
 
     // ##################################################################
+
+    // {
+    //     wordId: 20,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 21,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 22,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 23,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 24,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 25,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 26,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 27,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+
+    // {
+    //     wordId: 28,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },    
+    
+    // {
+    //     wordId: 29,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+
+    // {
+    //     wordId: 30,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 31,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 32,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 33,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 34,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 35,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 36,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 37,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+
+    // {
+    //     wordId: 38,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },    
+    
+    // {
+    //     wordId: 39,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+
+    // {
+    //     wordId: 40,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 41,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 42,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 43,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 44,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 45,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 46,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 47,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+
+    // {
+    //     wordId: 48,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },    
+    
+    // {
+    //     wordId: 49,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+
+    // {
+    //     wordId: 50,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 51,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 52,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 53,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 54,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 55,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 56,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 57,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+
+    // {
+    //     wordId: 58,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },    
+    
+    // {
+    //     wordId: 59,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+
+    // {
+    //     wordId: 60,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 61,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 62,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 63,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 64,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 65,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 66,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+        
+    // {
+    //     wordId: 67,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+
+    // {
+    //     wordId: 68,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },    
+    
+    // {
+    //     wordId: 69,
+    //     category: "",
+    //     time: time,
+    //     uz: "",
+    //     arabic: ``,
+    //     en: "",
+    //     ru: "",   
+    // },
+
     // {
     //     wordId: 70,
     //     category: "",
@@ -11337,7 +12213,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
-
+        
     // {
     //     wordId: 71,
     //     category: "",
@@ -11347,6 +12223,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
+        
     // {
     //     wordId: 72,
     //     category: "",
@@ -11356,6 +12233,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
+        
     // {
     //     wordId: 73,
     //     category: "",
@@ -11365,6 +12243,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
+        
     // {
     //     wordId: 74,
     //     category: "",
@@ -11374,7 +12253,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
-    
+        
     // {
     //     wordId: 75,
     //     category: "",
@@ -11384,6 +12263,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
+        
     // {
     //     wordId: 76,
     //     category: "",
@@ -11393,6 +12273,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
+        
     // {
     //     wordId: 77,
     //     category: "",
@@ -11402,6 +12283,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
+
     // {
     //     wordId: 78,
     //     category: "",
@@ -11410,7 +12292,8 @@ const allData = [
     //     arabic: ``,
     //     en: "",
     //     ru: "",   
-    // },
+    // },    
+    
     // {
     //     wordId: 79,
     //     category: "",
@@ -11420,6 +12303,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
+
     // {
     //     wordId: 80,
     //     category: "",
@@ -11429,7 +12313,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
-
+        
     // {
     //     wordId: 81,
     //     category: "",
@@ -11439,6 +12323,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
+        
     // {
     //     wordId: 82,
     //     category: "",
@@ -11448,6 +12333,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
+        
     // {
     //     wordId: 83,
     //     category: "",
@@ -11457,6 +12343,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
+        
     // {
     //     wordId: 84,
     //     category: "",
@@ -11466,7 +12353,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
-    
+        
     // {
     //     wordId: 85,
     //     category: "",
@@ -11476,6 +12363,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
+        
     // {
     //     wordId: 86,
     //     category: "",
@@ -11485,6 +12373,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
+        
     // {
     //     wordId: 87,
     //     category: "",
@@ -11494,6 +12383,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
+
     // {
     //     wordId: 88,
     //     category: "",
@@ -11502,7 +12392,8 @@ const allData = [
     //     arabic: ``,
     //     en: "",
     //     ru: "",   
-    // },
+    // },    
+    
     // {
     //     wordId: 89,
     //     category: "",
@@ -11512,6 +12403,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
+
     // {
     //     wordId: 90,
     //     category: "",
@@ -11521,7 +12413,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
-
+        
     // {
     //     wordId: 91,
     //     category: "",
@@ -11531,6 +12423,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
+        
     // {
     //     wordId: 92,
     //     category: "",
@@ -11540,6 +12433,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
+        
     // {
     //     wordId: 93,
     //     category: "",
@@ -11549,6 +12443,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
+        
     // {
     //     wordId: 94,
     //     category: "",
@@ -11558,7 +12453,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
-    
+        
     // {
     //     wordId: 95,
     //     category: "",
@@ -11568,6 +12463,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
+        
     // {
     //     wordId: 96,
     //     category: "",
@@ -11577,6 +12473,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
+        
     // {
     //     wordId: 97,
     //     category: "",
@@ -11586,6 +12483,7 @@ const allData = [
     //     en: "",
     //     ru: "",   
     // },
+
     // {
     //     wordId: 98,
     //     category: "",
@@ -11594,18 +12492,10 @@ const allData = [
     //     arabic: ``,
     //     en: "",
     //     ru: "",   
-    // },
+    // },    
+    
     // {
     //     wordId: 99,
-    //     category: "",
-    //     time: time,
-    //     uz: "",
-    //     arabic: ``,
-    //     en: "",
-    //     ru: "",   
-    // },
-    // {
-    //     wordId: 10,
     //     category: "",
     //     time: time,
     //     uz: "",
